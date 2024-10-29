@@ -1,18 +1,28 @@
+:root {
+    --card-bg-clr: #f3f3f3;
+    --general-border-clr: #cdcdcd
+}
+
 .currency__card--container {
+    z-index: 1;
+    position: static;
     width: 60%;
-    height: 40%;
+    height: 35%;
     max-width: 65rem;
     max-height: 45rem;
     padding: 1rem;
     border: none;
     border-radius: .5rem;
-    background-color: #f3f3f3;
+    background-color: var(--card-bg-clr);
+    opacity: .9;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .currency__input--container {
     width: 100%;
@@ -27,26 +37,67 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    border: 1px solid black;
+    gap: .5rem;
 }
 
 .currency__input {
     width: 100%;
     height: 3rem;
-    border: 1px solid #cdcdcd;
+    border: 1px solid var(--general-border-clr);
+    border-radius: .5rem;
     padding: 0 .5rem;
     font-weight: 600;
     font-size: 1.2rem;
 }
 
 .currency__dropdown {
+    cursor: pointer;
     width: 5rem;
     height: 2rem;
     font-weight: 600;
+    text-align: center;
+    border-radius: .5rem;
 }
 
 .currency__card--title {
-    font-size: 2rem;
+    height: 5rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.arrow-ico {
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    transition: .2s all;
+}
+
+.arrow-ico:hover {
+    transform: scale(1.1);
+}
+
+.arrow-ico:active {
+    transform: scale(.99);
+}
+
+#submitBtn {
+    cursor: pointer;
+    height: 3.5rem;
+    width: 7rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 1px solid var(--general-border-clr);
+    border-radius: .5rem;
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+#submitBtn:active {
+    transform: scale(.98);
+}
+
+option {
+    cursor: pointer;
 }

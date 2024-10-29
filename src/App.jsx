@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import './App.css'
 import CurrencyCard from './components/CurrencyCard'
 
 function App() {

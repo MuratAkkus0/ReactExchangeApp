@@ -1,0 +1,24 @@
+{
+    "currencies": [
+        {
+            "id": 1,
+            "country": "Germany",
+            "currency": "EUR"
+        },
+        {
+            "id": 2,
+            "country": "USA",
+            "currency": "USD"
+        },
+        {
+            "id": 3,
+            "country": "France",
+            "currency": "EUR"
+        },
+        {
+            "id": 4,
+            "country": "Turkey",
+            "currency": "TR"
+        }
+    ]
+}
