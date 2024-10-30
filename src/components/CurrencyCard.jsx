@@ -24,7 +24,6 @@ function CurrencyCard() {
         base_currency: "USD",
       },
     });
-    console.log(response.data.data);
 
     setData(response.data.data);
   };
@@ -33,7 +32,7 @@ function CurrencyCard() {
     if (!isNaN(Number(fromInput)) && fromInput > 0) {
       let oneCurrency = 1 / data[fromCurrency];
       let result = fromInput * (oneCurrency * data[toCurrency]);
-      setToInput(result);
+      setToInput(result.toFixed(3));
     }
   };
 
@@ -42,7 +41,7 @@ function CurrencyCard() {
     setFromCurrency(toCurrency);
     setToCurrency(tempCurrency);
     const tempInput = fromInput;
-    setFromInput(toInput ?? 0);
+    setFromInput(toInput ?? 0); // eger ici bos ise degeri 0 yapar.
     setToInput(tempInput ?? 0);
   };
 
